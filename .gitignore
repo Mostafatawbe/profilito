@@ -41,3 +41,6 @@ tsconfig.tsbuildinfo
 
 # Bun
 .bun/
+
+# npm lockfile (project uses bun)
+package-lock.json

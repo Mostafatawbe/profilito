@@ -7,7 +7,7 @@ export const profile = {
   // Placeholder — exact profile URL not provided in the CV
   linkedin: "https://www.linkedin.com/",
   github: "https://github.com/",
-  cvUrl: "/files/Mostafa_Tawbe_CV.docx",
+  cvUrl: "/files/Mostafa_Tawbe_CV.pdf",
   intro:
     "I build web and mobile applications end-to-end — from relational data models and server-side logic to responsive interfaces — with a growing focus on cloud infrastructure and low-code automation.",
   languages: ["Arabic (Native)", "English (Fluent)"],
