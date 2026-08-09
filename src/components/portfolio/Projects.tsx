@@ -8,7 +8,7 @@ export function Projects() {
       id="projects"
       eyebrow="06 / Projects"
       title="Selected work"
-      description="Applications built end-to-end — from database schema to interface. Repository and demo links are placeholders until published."
+      description="Applications built end-to-end — from database schema to interface."
     >
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, i) => (
@@ -44,22 +44,28 @@ export function Projects() {
                   ))}
                 </ul>
                 <div className="mt-5 flex gap-2">
-                  <a
-                    href={project.github || "#projects"}
-                    aria-disabled={!project.github}
-                    className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg border border-border bg-surface-2 px-3 py-2 text-xs font-medium transition-colors hover:bg-secondary"
-                  >
-                    <Github className="size-3.5" aria-hidden="true" />
-                    GitHub
-                  </a>
-                  <a
-                    href={project.demo || "#projects"}
-                    aria-disabled={!project.demo}
-                    className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg border border-primary/40 bg-primary/10 px-3 py-2 text-xs font-medium text-primary transition-colors hover:bg-primary/20"
-                  >
-                    <ExternalLink className="size-3.5" aria-hidden="true" />
-                    Live Demo
-                  </a>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-surface-2 px-3 py-2 text-xs font-medium transition-colors hover:bg-secondary ${!project.demo ? "flex-1" : ""}`}
+                    >
+                      <Github className="size-3.5" aria-hidden="true" />
+                      GitHub
+                    </a>
+                  )}
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`inline-flex items-center justify-center gap-2 rounded-lg border border-primary/40 bg-primary/10 px-3 py-2 text-xs font-medium text-primary transition-colors hover:bg-primary/20 ${!project.github ? "flex-1" : "flex-1"}`}
+                    >
+                      <ExternalLink className="size-3.5" aria-hidden="true" />
+                      Live Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </article>
