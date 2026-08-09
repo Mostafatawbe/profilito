@@ -4,9 +4,8 @@ export const profile = {
   location: "Beirut, Lebanon",
   phone: "+961 81 019 783",
   email: "mostafatawbe17@gmail.com",
-  // Placeholder — exact profile URL not provided in the CV
   linkedin: "https://www.linkedin.com/",
-  github: "https://github.com/",
+  github: "https://github.com/Mostafatawbe",
   cvUrl: "/files/Mostafa_Tawbe_CV.pdf",
   intro:
     "I build web and mobile applications end-to-end — from relational data models and server-side logic to responsive interfaces — with a growing focus on cloud infrastructure and low-code automation.",
@@ -138,6 +137,18 @@ export const certifications = [
     detail: "Foundations of machine learning concepts and applied practice.",
     tags: ["Machine Learning"],
   },
+  {
+    name: "Graphic Design Course",
+    issuer: "Online / Professional Training",
+    detail: "Completed a graphic design course covering visual principles, typography, color theory, and design tools.",
+    tags: ["Design", "Typography", "Visual Communication"],
+  },
+  {
+    name: "AI for Social Impact",
+    issuer: "Dot AI",
+    detail: "Completed the AI for Social Impact course by Dot AI, exploring how artificial intelligence can be leveraged to address real-world social challenges.",
+    tags: ["AI", "Social Impact", "Dot AI"],
+  },
 ];
 
 export const projects = [
@@ -147,7 +158,7 @@ export const projects = [
       "Mobile commerce app with inventory management, a persistent shopping cart, and local database storage. Implemented full CRUD operations and real-time catalog updates.",
     tech: ["Java", "XML", "SQLite", "Android Studio"],
     featured: true,
-    github: "",
+    github: "https://github.com/Mostafatawbe/mobile",
     demo: "",
   },
   {
@@ -156,8 +167,8 @@ export const projects = [
       "Web-based e-commerce platform with user sessions, product catalogs, category management, database integration, and secure form validation.",
     tech: ["PHP", "SQL", "MySQL", "HTML5", "CSS3"],
     featured: true,
-    github: "",
-    demo: "",
+    github: "https://github.com/Mostafatawbe/computershop",
+    demo: "http://mostafatawbe.site.je",
   },
   {
     title: "Booking Platform",
@@ -174,8 +185,17 @@ export const projects = [
       "Responsive frontend clone optimized for cross-browser compatibility and mobile responsiveness, focused on layout fidelity and interaction polish.",
     tech: ["HTML", "CSS", "JavaScript"],
     featured: false,
-    github: "",
-    demo: "",
+    github: "https://github.com/Mostafatawbe/movie",
+    demo: "https://movie-netflixclone.vercel.app/",
+  },
+  {
+    title: "Movies Web Application",
+    description:
+      "Full-featured movies browsing app with dynamic filtering, search, and responsive layout — deployed on Vercel with a clean modern UI.",
+    tech: ["JavaScript", "HTML", "CSS", "Vercel"],
+    featured: false,
+    github: "https://github.com/Mostafatawbe/movies",
+    demo: "https://movies-mcyv-84ognseqm-mostafatawbe17-8787s-projects.vercel.app/",
   },
   {
     title: "AI-Assisted Development Portfolio",
