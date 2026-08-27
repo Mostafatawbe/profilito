@@ -171,12 +171,12 @@ export const projects = [
     demo: "http://mostafatawbe.site.je",
   },
   {
-    title: "Booking Platform",
+    title: "Hotel Reservation",
     description:
-      "Service-booking system built around structured form processing, server-side validation, reliable database workflows, and interactive user feedback.",
+      "Hotel reservation system built around structured form processing, server-side validation, reliable database workflows, and interactive user feedback.",
     tech: ["PHP", "SQL", "JavaScript"],
     featured: false,
-    github: "",
+    github: "https://github.com/Mostafatawbe/hotel",
     demo: "",
   },
   {
