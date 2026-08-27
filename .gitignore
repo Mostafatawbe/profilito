@@ -49,3 +49,6 @@ tsconfig.tsbuildinfo
 
 # npm lockfile (project uses bun)
 package-lock.json
+
+# Vercel CLI local cache
+.vercel/
